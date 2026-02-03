@@ -7,10 +7,11 @@ import { TrendingUp, Users, Clock, Zap, Cpu, Globe, Code } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const baseUrl = import.meta.env.BASE_URL;
 const clientCases = [
   {
     id: 1,
-    image: '/case-1.jpg',
+    image: `${baseUrl}case-1.jpg`,
     title: '电商运营自动化',
     client: '准上市亚马逊电商公司',
     description: '开发整套RPA电商自动化运营程序，自动生成listing、批量获取竞品数据，节省2个运营一年20万人工成本。',
@@ -22,7 +23,7 @@ const clientCases = [
   },
   {
     id: 2,
-    image: '/case-2.png',
+    image: `${baseUrl}case-2.png`,
     title: '小红书社媒运营自动化',
     client: '新西兰房车租赁公司',
     description: '开发小红书自动化系统，实现自动仿写爆款笔记、自动发布，运营效率提高20倍。',
@@ -34,7 +35,7 @@ const clientCases = [
   },
   {
     id: 3,
-    image: '/case-3.png',
+    image: `${baseUrl}case-3.png`,
     title: '口腔医疗客服机器人',
     client: '全国连锁口腔医疗机构',
     description: '搭建AI客服机器人，调用内部知识库精准回答，实现自动预约、推送企业微信名片等功能。',
@@ -46,7 +47,7 @@ const clientCases = [
   },
   {
     id: 4,
-    image: '/case-4.jpg',
+    image: `${baseUrl}case-4.jpg`,
     title: '电商批量生成组图工作流',
     client: '10+家跨境电商企业',
     description: '根据客户需求，搭建电商生图工作流，可实现上传产品图+产品描述后运行，即可批量生成电商全套组图20+张，包括场景图、细节图、尺寸图、A+图、详情页图等。',

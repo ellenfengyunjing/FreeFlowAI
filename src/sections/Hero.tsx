@@ -10,6 +10,14 @@ export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
+    // 确保背景视频能自动播放（部分浏览器需要程序触发）
+    const video = videoRef.current;
+    if (video) {
+      video.play().catch(() => {});
+    }
+  }, []);
+
+  useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ delay: 0.5 });
 
@@ -79,13 +87,14 @@ export function Hero() {
           muted
           loop
           playsInline
+          preload="auto"
           className="w-full h-full object-cover"
           style={{ 
             objectPosition: 'center center',
             filter: 'brightness(0.9)'
           }}
         >
-          <source src="/hero-bg-clean.mp4" type="video/mp4" />
+          <source src="/bg-video.mp4" type="video/mp4" />
         </video>
         {/* Overlay to ensure text readability */}
         <div className="absolute inset-0 bg-black/30" />

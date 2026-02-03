@@ -4,30 +4,31 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { MessageCircle, BookOpen, Video, QrCode, X } from 'lucide-react';
 
+const baseUrl = import.meta.env.BASE_URL;
 const contactMethods = [
   {
     icon: MessageCircle,
     label: '微信',
     value: '扫码添加微信',
-    qrCode: '/qr-wechat.png',
+    qrCode: `${baseUrl}qr-wechat.png`,
   },
   {
     icon: BookOpen,
     label: '小红书',
     value: '扫码关注小红书',
-    qrCode: '/qr-xiaohongshu.png',
+    qrCode: `${baseUrl}qr-xiaohongshu.png`,
   },
   {
     icon: Video,
     label: '抖音',
     value: '扫码关注抖音',
-    qrCode: '/qr-douyin.png',
+    qrCode: `${baseUrl}qr-douyin.png`,
   },
   {
     icon: QrCode,
     label: '公众号/视频号',
     value: '扫码关注公众号',
-    qrCode: '/qr-gongzhonghao.jpg',
+    qrCode: `${baseUrl}qr-gongzhonghao.jpg`,
   },
 ];
 

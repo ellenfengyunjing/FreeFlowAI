@@ -71,7 +71,7 @@ export function About() {
                   {/* Founder Photo */}
                   <div className="w-24 h-28 rounded-xl overflow-hidden flex-shrink-0 bg-[#1a1a1a]">
                     <img 
-                      src="/ellen-feng.png" 
+                      src={`${import.meta.env.BASE_URL}ellen-feng.png`} 
                       alt="冯韵静 Ellen Feng"
                       className="w-full h-full object-cover"
                     />

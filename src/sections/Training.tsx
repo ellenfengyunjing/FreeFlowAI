@@ -6,66 +6,67 @@ import { ScrollReveal } from '@/components/animations/ScrollReveal';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const baseUrl = import.meta.env.BASE_URL;
 const trainingCases = [
   {
     id: 1,
-    image: '/training-1.jpg',
+    image: `${baseUrl}training-1.jpg`,
     title: '海柔创新科技公司',
     subtitle: 'AI营销自动化实战课',
     description: 'AI营销自动化实战课：从爆款到洞察闭环，帮助企业掌握AI生成营销文案、图片的技巧，实现营销内容自动化生产。',
   },
   {
     id: 2,
-    image: '/training-2.jpg',
+    image: `${baseUrl}training-2.jpg`,
     title: '谷歌跨境电商中心',
     subtitle: 'TapNow广告工作流',
     description: '如何用TapNow打造低成本可复用广告工作流，帮助跨境电商企业降低广告投放成本，提高广告效果。',
   },
   {
     id: 3,
-    image: '/training-3.jpg',
+    image: `${baseUrl}training-3.jpg`,
     title: '深圳市南山智园',
     subtitle: 'AI职场办公提效系列课',
     description: 'AI职场办公提效系列课，帮助园区企业员工掌握AI办公工具，提升日常工作效率。',
   },
   {
     id: 4,
-    image: '/training-4.jpg',
+    image: `${baseUrl}training-4.jpg`,
     title: '深圳市人工智能协会',
     subtitle: '扣子智能体社媒爆款',
     description: '如何用扣子智能体打造社媒爆款内容自动化体系，帮助企业实现社交媒体内容自动化运营。',
   },
   {
     id: 5,
-    image: '/training-5.jpg',
+    image: `${baseUrl}training-5.jpg`,
     title: '深圳市南山智园青年夜校',
     subtitle: 'AI职场办公提效系列课',
     description: 'AI职场办公提效（一）：AI速读文档、会议纪要和公文写作；AI职场办公提效（二）：Word/Excel自动化处理，PPT/图表生成。',
   },
   {
     id: 6,
-    image: '/training-6.jpg',
+    image: `${baseUrl}training-6.jpg`,
     title: '深圳市龙华总工会',
     subtitle: 'Deepseek职场达人',
     description: '2小时变身AI职场达人：Deepseek从入门到实战，帮助职工快速掌握Deepseek AI工具的使用方法。',
   },
   {
     id: 7,
-    image: '/training-7.jpg',
+    image: `${baseUrl}training-7.jpg`,
     title: '香港大学MBA学院',
     subtitle: '飞书+扣子办公自动化',
     description: '飞书+扣子实现高效办公自动化，为MBA学员提供前沿的AI办公自动化解决方案。',
   },
   {
     id: 8,
-    image: '/training-8.png',
+    image: `${baseUrl}training-8.png`,
     title: '深圳职业技术大学',
     subtitle: '小红书爆款仿写智能体',
     description: '用扣子打造小红书爆款仿写智能体，帮助学生掌握AI内容创作技巧，提升就业竞争力。',
   },
   {
     id: 9,
-    image: '/training-9.jpg',
+    image: `${baseUrl}training-9.jpg`,
     title: '深圳赤湾胜宝旺工程有限公司',
     subtitle: '3天AI企业提效系列课',
     description: '3天AI企业提效系列课：1. 职场办公提效全流程实操；2. 飞书&影刀办公自动化；3. 扣子/N8N/Make工作流。',
