@@ -84,13 +84,11 @@ export function Services() {
             <p className="text-[#737373] mb-4">
               不确定需要哪种服务？联系我们获取免费咨询
             </p>
-            <a 
-              href="#contact"
+            <a
+              href="https://ccnkpg6fj0oc.feishu.cn/share/base/form/shrcnrO1fb8XWn0bpJq0EF4UyCd"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[#00f0ff] hover:underline"
-              onClick={(e) => {
-                e.preventDefault();
-                document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
-              }}
             >
               预约咨询 →
             </a>

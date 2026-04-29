@@ -78,23 +78,23 @@ export function About() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-white">冯韵静 Ellen Feng</h3>
-                    <p className="text-[#00f0ff] text-sm">CEO / 创始人</p>
-                    <p className="text-[#737373] text-sm mt-1">准上市公司AI转型顾问</p>
+                    <p className="text-[#00f0ff] text-sm">深圳市自在无界科技有限公司CEO</p>
+                    <p className="text-[#737373] text-sm mt-1">亿级跨境企业 AI 战略顾问</p>
                   </div>
                 </div>
 
                 <div className="space-y-3">
                   <div className="flex items-start gap-2 text-sm text-[#e5e5e5]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] mt-2 flex-shrink-0" />
-                    资深AI培训导师，AI Agent开发专家，RPA工程师
+                    AI Agent 架构师｜跨境 AI 实战专家｜资深企业 AI 培训导师
                   </div>
                   <div className="flex items-start gap-2 text-sm text-[#e5e5e5]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] mt-2 flex-shrink-0" />
-                    6000+粉AI自媒体博主（Ellen AI实战派）
+                    荷兰阿姆斯特丹大学硕士，10年海外市场营销与全球化增长经验
                   </div>
                   <div className="flex items-start gap-2 text-sm text-[#e5e5e5]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#ec4899] mt-2 flex-shrink-0" />
-                    阿姆斯特丹大学硕士，10年海外市场营销经验
+                    全网万粉 AI 博主（@Ellen AI实战派）
                   </div>
                 </div>
 

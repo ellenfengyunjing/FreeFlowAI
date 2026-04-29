@@ -11,6 +11,8 @@ const navLinks = [
   { label: '联系我们', href: '#contact' },
 ];
 
+const CONSULT_URL = 'https://ccnkpg6fj0oc.feishu.cn/share/base/form/shrcnrO1fb8XWn0bpJq0EF4UyCd';
+
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -76,9 +78,9 @@ export function Navbar() {
 
             {/* CTA Button */}
             <div className="hidden md:block">
-              <Button 
+              <Button
                 className="bg-gradient-to-r from-[#00f0ff] to-[#a855f7] text-black font-semibold hover:opacity-90"
-                onClick={() => scrollToSection('#contact')}
+                onClick={() => window.open(CONSULT_URL, '_blank')}
               >
                 立即咨询
               </Button>
@@ -111,9 +113,12 @@ export function Navbar() {
               {link.label}
             </button>
           ))}
-          <Button 
+          <Button
             className="mt-4 bg-gradient-to-r from-[#00f0ff] to-[#a855f7] text-black font-semibold"
-            onClick={() => scrollToSection('#contact')}
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              window.open(CONSULT_URL, '_blank');
+            }}
           >
             立即咨询
           </Button>

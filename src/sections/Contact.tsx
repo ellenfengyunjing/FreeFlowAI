@@ -105,15 +105,10 @@ export function Contact() {
             <p className="text-[#a3a3a3] mb-6">
               立即联系我们，获取免费的AI转型咨询
             </p>
-            <Button 
+            <Button
               size="lg"
               className="bg-gradient-to-r from-[#00f0ff] to-[#a855f7] text-black font-semibold px-8 hover:opacity-90"
-              onClick={() => {
-                const contactSection = document.querySelector('#contact');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
+              onClick={() => window.open('https://ccnkpg6fj0oc.feishu.cn/share/base/form/shrcnrO1fb8XWn0bpJq0EF4UyCd', '_blank')}
             >
               <MessageCircle className="w-4 h-4 mr-2" />
               点击咨询
